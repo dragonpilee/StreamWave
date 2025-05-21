@@ -170,15 +170,6 @@ const getIndianChannels = (): Channel[] => {
       url: 'https://siloh.pluto.tv/lilo/production/SkyNews/master.m3u8',
       country: 'United Kingdom',
       language: 'English'
-    },
-    {
-      id: 'france24',
-      name: 'France 24 English',
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/FRANCE_24_logo.svg/1280px-FRANCE_24_logo.svg.png',
-      group: 'News',
-      url: 'https://d2223ykdwbwv7j.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/France24_W-Europe/index.m3u8',
-      country: 'France',
-      language: 'English'
     }
   ];
 };
