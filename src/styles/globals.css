@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+  --gray-700: 55, 65, 81;
+  --gray-800: 31, 41, 55;
+  --gray-900: 17, 24, 39;
+  --primary: 30, 64, 175;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-rgb));
+  min-height: 100vh;
+}
+
+/* Custom background colors */
+.bg-gray-700 {
+  background-color: rgb(var(--gray-700));
+}
+
+.bg-gray-800 {
+  background-color: rgb(var(--gray-800));
+}
+
+.bg-gray-900 {
+  background-color: rgb(var(--gray-900));
+}
+
+.bg-primary {
+  background-color: rgb(var(--primary));
+}
+
+/* Custom text colors */
+.text-gray-300 {
+  color: rgba(209, 213, 219);
+}
+
+.text-gray-400 {
+  color: rgba(156, 163, 175);
+}
+
+.text-gray-500 {
+  color: rgba(107, 114, 128);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-400 {
+  color: rgb(96, 165, 250);
+}
+
+.text-blue-500 {
+  color: rgb(59, 130, 246);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video,
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.channel-card {
+  background-color: rgb(var(--gray-800));
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.channel-card:hover {
+  transform: scale(1.05);
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(209, 213, 219);
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(59, 130, 246);
+  border-color: transparent;
+}
+
+.btn {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.btn-primary {
+  background-color: rgb(var(--primary));
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: rgb(29, 78, 216); /* blue-700 */
+}
+
+/* Video.js custom styles */
+.vjs-theme-iptv {
+  --vjs-theme-primary: #1e40af;
+}
+
+.vjs-theme-iptv .vjs-big-play-button {
+  background-color: rgba(30, 64, 175, 0.7);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border: none;
+}
+
+.vjs-theme-iptv .vjs-control-bar {
+  background-color: rgba(15, 23, 42, 0.7);
+}
+
+/* Add keyframes for spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: rgb(59, 130, 246);
+  border-bottom-color: rgb(59, 130, 246);
+  animation: spin 1s linear infinite;
+}
+
+/* Responsive layout for search and filter container */
+.search-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-container {
+  width: 100%;
+}
+
+.filter-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .search-filter-container {
+    flex-direction: row;
+  }
+  
+  .search-container {
+    width: 66.666667%;
+  }
+  
+  .filter-container {
+    width: 33.333333%;
+  }
+}
