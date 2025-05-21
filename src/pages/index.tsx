@@ -83,7 +83,7 @@ export default function Home() {
             StreamWave.TV
           </h1>
           <p style={{ color: 'rgb(156, 163, 175)', textAlign: 'center' }}>
-            Stream international channels
+            Stream International channels
           </p>
         </div>
 
