@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <Head>
         <title>StreamWave.TV</title>
-        <meta name="description" content="Stream international TV channels on StreamWave.TV" />
+        <meta name="description" content="Stream International TV channels on StreamWave.TV" />
       </Head>
 
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1rem' }}>
