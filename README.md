@@ -61,7 +61,7 @@ StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV ch
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/streamwave-tv.git
+git clone https://github.com/dragonpilee/StreamWave.git
 cd streamwave-tv
 ```
 
