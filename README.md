@@ -1,8 +1,21 @@
 # StreamWave.TV
 
+![Next.js](https://img.shields.io/badge/Framework-Next.js-black)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue)
+![PWA](https://img.shields.io/badge/PWA-Supported-green)
+![video.js](https://img.shields.io/badge/Player-video.js-orange)
+![IPTV-org](https://img.shields.io/badge/Data-IPTV--org-01b4e4)
+
+> **Developed by Alan Cyril Sunny**  
+> If you find this project helpful, please consider ⭐ [starring the repository](https://github.com/dragonpilee/StreamWave)!
+
+---
+
 ![StreamWave.TV Logo](/public/logo192.svg)
 
 StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV channels, built with cutting-edge web technologies to provide a seamless media consumption experience.
+
+---
 
 ## 🌟 Features
 
@@ -14,6 +27,8 @@ StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV ch
 - **Offline Mode**: Basic functionality works even when offline
 - **Video Player**: Full-featured video playback with video.js integration
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/) with TypeScript
@@ -22,6 +37,8 @@ StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV ch
 - **Video Playback**: [video.js](https://videojs.com/) for HLS stream support
 - **PWA Features**: Service worker, web manifest, and offline support
 - **IPTV Source**: Integration with [IPTV-org](https://github.com/iptv-org/iptv) repository
+
+---
 
 ## 📋 Project Structure
 
@@ -50,6 +67,8 @@ StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV ch
 │       └── m3uParser     # M3U playlist parsing
 ```
 
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -60,26 +79,28 @@ StreamWave.TV is a Progressive Web App (PWA) for streaming international IPTV ch
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/dragonpilee/StreamWave.git
-cd streamwave-tv
-```
+   ```bash
+   git clone https://github.com/dragonpilee/StreamWave.git
+   cd streamwave-tv
+   ```
 
 2. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
 3. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+---
 
 ## 📱 PWA Installation
 
@@ -89,6 +110,8 @@ StreamWave.TV can be installed as a Progressive Web App on:
 - **Android**: Tap "Add to Home Screen" from the browser menu
 - **iOS**: Tap the share button, then "Add to Home Screen"
 
+---
+
 ## 🔍 Channel Playback
 
 The application uses HLS (HTTP Live Streaming) to play video content. If you encounter playback issues:
@@ -96,6 +119,8 @@ The application uses HLS (HTTP Live Streaming) to play video content. If you enc
 - Ensure your internet connection is stable
 - Some channels may be region-restricted or temporarily unavailable
 - Try different channels as stream availability may vary
+
+---
 
 ## 🧩 Component Details
 
@@ -118,9 +143,13 @@ Channels can be filtered by:
 - Fullscreen mode
 - Responsive sizing
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
 
 ## 🙏 Acknowledgements
 
@@ -128,3 +157,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [video.js](https://videojs.com/) for the video player
 - [Next.js](https://nextjs.org/) for the application framework
 - All open-source libraries used in this project
+
+---
